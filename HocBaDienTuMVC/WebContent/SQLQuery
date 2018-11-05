@@ -1,0 +1,18 @@
+SELECT  classes_name, subject_id , subject_teacher_id, subject_term1_score_average, subject_term2_score_average , student_name, student_class_id
+FROM tblsubject
+LEFT JOIN tblaccademic_year ON tblsubject.subject_accademic_year_id = tblaccademic_year.accademic_year_id
+
+LEFT JOIN tblstudent ON tblaccademic_year.accademic_year_student_id = tblstudent.student_id
+LEFT JOIN tblclasses ON tblstudent.student_class_id = tblclasses.classes_id
+WHERE tblsubject.subject_teacher_id = 21 AND tblclasses.classes_name = '10A1'
+
+
+
+
+
+SELECT * FROM tblsubject
+LEFT JOIN tblaccademic_year ON tblsubject.subject_accademic_year_id = tblaccademic_year.accademic_year_id
+LEFT JOIN tblstudent ON tblaccademic_year.accademic_year_student_id = tblstudent.student_id
+
+LEFT JOIN tblclasses ON tblclasses.classes_id = tblstudent.student_class_id
+WHERE subject_teacher_id = 21 AND classes_id = 6 AND accademic_year_name = '2';

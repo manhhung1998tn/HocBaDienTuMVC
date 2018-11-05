@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//WebContent/assets/css/login.css=UTF-8
+encoding//WebContent/view/header.jsp=UTF-8
+encoding//WebContent/view/menu.jsp=UTF-8
+encoding//WebContent/view/testJson.jsp=UTF-8
+encoding//src/hocba/controller/InfoStudentController.java=UTF-8
+encoding//src/hocba/dao/AccoutDAO.java=UTF-8
+encoding//src/hocba/model/StudentModel.java=UTF-8
+encoding//src/hocba/model/UserModel.java=UTF-8

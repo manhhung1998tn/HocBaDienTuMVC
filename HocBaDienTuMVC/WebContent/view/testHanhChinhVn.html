@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<select id="tinh_tp">
+		<option selected hidden disabled >Chọn tỉnh/TP</option>
+	</select>
+	<select id="quan_huyen">
+		<option selected hidden disabled >Chọn Quận Huyện</option>
+	</select>
+	<select id="xa_phuong">
+		<option selected hidden disabled >Chọn Xã Phường</option>
+	</select>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+		var tinh_tp;
+		
+
+		$.getJSON( "../assets/dist/tinh_tp.json", function( json ) {
+    		console.log( "JSON Data received, name is " + json.name);
+		});
+	});
+	</script>
+</body>
+</html>
